@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Define the element to be animated */
+.move {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  animation-name: moveElement;
+  animation-duration: 3s; /* Duration of the animation */
+  animation-timing-function: linear; /* Linear timing function for constant speed */
+  animation-iteration-count: infinite; /* Infinite loop */
+}
+
+/* Define the animation keyframes */
+@keyframes moveElement {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100vw - 100px); /* Move to the rightmost side of the screen */
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="move"></div> <!-- Element to be animated -->
+
+</body>
+</html>
